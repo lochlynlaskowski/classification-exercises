@@ -28,13 +28,7 @@ def get_iris_data():
         return pd.read_csv(filename)
     else:
        sql_query = """
-                SELECT 
-                    species_id,
-                    species_name,
-                    sepal_length,
-                    sepal_width,
-                    petal_length,
-                    petal_width
+                SELECT *
                 FROM measurements
                 JOIN species USING(species_id)
                 """
