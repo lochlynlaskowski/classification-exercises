@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.impute import SimpleImputer
 
-
+import acquire
 
 def prep_iris(df):
     columns_to_drop = ['species_id', 'Unnamed: 0', 'measurement_id']
